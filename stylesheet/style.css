@@ -1,0 +1,541 @@
+/*Limelight & Merriweather font */
+@import url(http://fonts.googleapis.com/css?family=Varela|Limelight|Merriweather&v2);
+
+
+body{
+	background-color: #B0B0B0;
+}
+
+
+
+/* NAV BAR *****************************************/
+.nav-wrapper > ul{
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; 
+	min-height:100px;
+  list-style-type: none;
+  border-radius: 5px;
+  background-color: #303030;
+  /*z-index: 9999;*/
+  opacity: 0.9;
+  
+}
+
+
+/* text in nav */
+.nav-wrapper li a{
+  font-family: 'Limelight', cursive;
+	font-size:35px;
+	font-weight:bold;
+	font-variant: small-caps;
+	text-decoration:none;
+	color: #f9f9f9;
+  
+}
+
+.nav-wrapper li::first-letter{ color: #D80000;}
+
+.nav-wrapper a {margin-right: 20px;}
+
+li a:hover{ text-decoration:underline; color:#D80000;}
+
+.nav4::after{
+  content:" The Elysian Hotel";
+  font-family: 'Limelight', cursive;
+  text-decoration: underline;
+  font-size:40px;
+  font-weight:bold;
+  color: #f9f9f9;
+}
+
+
+/* MAIN ********************************************/
+.main-wrapper {
+  display: flex; 
+}
+
+
+/* Center Panel */
+.main_center {
+  flex-basis: 75%; 	
+  order: 2;
+  border-radius: 10px;
+  background: #0099FF;
+}
+/* Left Panel */
+.asideleft {
+  flex-basis: 30%; 
+  order: 1; 
+  border-radius: 10px;
+  margin-right: 10px;
+  background: #0099FF;
+}
+/* Right Panel */
+.asideright {
+  flex-basis: 20%;  
+  order: 3; 
+  border-radius: 10px;
+  margin-left: 10px;
+  background: #EBEBEB;
+}
+
+.asiderightEnquiries{
+  flex-basis: 40%;  
+  order: 3; 
+  border-radius: 10px;
+  margin-left: 10px;
+  background: #EBEBEB;
+}
+
+#img_enquiriesR{
+  margin-bottom: 175px;
+  width:100%;
+  height:auto;
+  border-radius: 10px;
+}
+
+#main_txt{
+  flex-basis: 50%;
+  font-family: 'Merriweather', serif;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+#img_interior_1{ 
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px;
+}
+
+#img_logo{
+  height: 163px;
+  width: 250px;
+  bottom:200px;
+  left:150px;
+  opacity: 0.6;
+  margin-top: -125px;
+  z-index: 1;
+  position: relative;
+}
+
+#img_logo_left{
+  opacity: 0.8;
+  width: 250px;
+  bottom:300px;
+  margin-top: 10px;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+
+#google_map{
+  width:75%;
+  margin: 10px 10px;
+  border: none;
+}
+
+
+.asideL_txt{
+  flex-basis: 50%;
+  font-family: 'Merriweather', serif;
+  padding: 10px;
+  justify-content: flex-end;
+}
+
+.twitter-timeline{
+  padding-top: 30px;
+}
+
+#img_external_AsideR{ 
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px;
+}
+
+.asideR_txt{
+  flex-basis: 50%;
+  font-family: 'Merriweather', serif;
+  font-size:15px;
+  padding: 10px;
+}
+
+#contact_details{
+  padding: 20px 0px 0px 10px; 
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+#cont_details{
+  padding-left: 10px; 
+  line-height: 1.3; 
+  color: #2F4F4F;
+}
+
+#twitter_widget{
+  margin-left: 10px;
+
+}
+
+.youtube{
+  width: 100%;
+  height:500px;
+  border: none;
+}
+
+.youtube ~ p{
+  font-family: 'Merriweather', serif;
+  font-size:15px;
+  padding-left: 10px;
+}
+
+#pav_icon{
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+
+#golf_icon{
+  padding-left: 5px;
+  padding-bottom: 30px;
+}
+
+
+#img_oldHead{
+  width:100%;
+  height:250px;
+}
+
+#img_pavilion{
+  margin-top:240px;
+  width:100%;
+  height:250px;
+}
+
+#img_map{
+  padding-left: 10px;
+  width:90%;
+  height:auto;
+}
+
+
+/* FORM ********************************************/
+#form_booking{
+  width: 270px;
+  margin: 10px 0px 0px 10px;
+  border:none;
+  /*opacity: 0.9;*/
+  box-shadow: 5px 5px 5px black;
+  border-radius: 5px;
+  background-color: #B0B0B0;
+}
+
+#form_booking fieldset{ border:none; }
+
+#form_headding{
+  margin-left: 60px;
+  font-size: 23px;
+  font-variant: small-caps;
+  font-weight:bold;
+}
+
+input[type="number"] {width: 130px;}
+
+#bookNow > button{
+  margin-left: 120px;
+  height:35px;
+  width: 117px;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-family:arial;
+  font-size:16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #232323;
+  background-color: #AA1111;
+  color: #f9f9f9;
+}
+
+#lowestPrice{margin-top: -50px;}
+
+#roomType {margin-left: 20px; margin-bottom: 5px; width:135px;}
+
+#dateDay, #nightStay, #numGuests, #breakfast{margin-bottom: 20px; }
+
+#numGuests{margin-left: 20px;}
+
+#nightStay{margin-left: 20px;}
+
+#break_yes{margin-left: 30px;}
+
+#dateDay{margin-left: 36px;}
+
+#dateMonth{margin-left: -3px;}
+
+.night_Stay{width: 135px;}
+
+
+
+/* FORM - ENQUIRIES PAGE *******************************/
+
+section > p{
+  margin-left: 10px;
+  font-family: 'Limelight', cursive;
+  font-size: 23px;
+}
+
+/*fieldset{ border:none; }*/
+
+#form_enquiries fieldset{
+  margin-top: 10px;
+  border:none;
+
+}
+
+#fname, #sname, #email, #tel, #aDate, #dDate, 
+  #noAdults, #noChildren, #noRooms{
+    width:200px;
+}
+
+#fname, #sname, #email, #address, #aDate, #country,
+  #dDate, #noAdults, #noChildren, #noRooms, #submit{
+    margin-bottom: 15px;
+}
+
+fieldset input:hover{background:#B0B0B0;}
+
+fieldset textarea:hover{background:#B0B0B0;}
+
+#fname{ margin-left: 35px; }
+
+#sname{ margin-left: 17px; }
+
+#email{ margin-left: 68px; }
+
+#tel{ margin-left: 40px; }
+
+#address{  margin-left: 118px; margin-top: -40px; }
+
+#country{ margin-left: 62px; width:206px;}
+
+#aDate{ margin-left: 26px; }
+
+#dDate{ margin-left: 8px; }
+
+#noAdults{ margin-left: 36px; }
+
+#noChildren{ margin-left: 31px; }
+
+#noRooms{ margin-left: 33px; }
+
+#submit{ margin-left: 130px; margin-right: 25px; }
+
+#submit, #reset{
+  height:25px;
+  width: 75px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-family:arial;
+  font-size:14px;
+  background-color: #AA1111;
+  color: #f9f9f9;
+}
+
+/*.form_right{
+  margin-left: 400px;
+  margin-top: -210px;
+}*/
+
+
+
+
+
+/* TABLE ********************************************/
+
+table{
+  border-collapse: collapse;
+  background-color: #B0B0B0;
+  font-family: 'Limelight', cursive;
+}
+
+#table_wrapper{
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-color: #0099FF;
+}
+
+
+#table_title{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Limelight', cursive;
+}
+
+#table_desc{
+  padding-left: 10px;
+  padding-right:10px;
+}
+
+#table_p{
+  font-weight: normal; 
+  font-size: 15px; 
+  font-family: 'Merriweather', serif;
+
+}
+
+#tableStarters{
+  flex-basis : 40%;
+  
+}
+
+#tableMains{
+  flex-basis : 40%;
+  margin-bottom: 10px;
+  
+}
+
+
+td, th{
+    border: 1px solid black;
+    padding:15px;
+    border-collapse: collapse;  
+    font-size: 14px;
+}
+
+th{
+  color: black;
+  font-size: 20px;
+  font-variant: small-caps;
+  background-color:#989898 ;
+}
+
+td {
+  color: black;
+}
+
+tr:hover {
+  background: #66CCFF;
+}
+
+
+/* ROOMS ********************************************/
+
+dl{ margin-left: 10px;}
+
+dt{ 
+  font-family: 'Limelight', cursive; 
+  font-size:20px;
+}
+
+dd{ font-family: 'Merriweather', serif; font-size:15px;}
+
+.img_room1{ padding-right: 10px;}
+
+
+figure img{ height:146px; width:240px; }
+
+figcaption{ font-family: 'Limelight', cursive; font-size:20px;}
+
+
+/*Room description buttons */
+.button{
+  margin-left: 40px;
+  margin-bottom:10px;
+  height:25px;
+  width: 125px;
+  border: 1px solid #383838;
+  border-radius: 5px;
+  font-weight:bold;
+  font-family:arial;
+  font-size:14px;
+  background-color: #B0B0B0;
+  color: #383838;
+}
+
+.lightbox{
+  padding-right: 20px;
+  font-weight:bold;
+  font-family:arial;
+  font-size:14px;
+  color: inherit;
+  text-decoration:none;
+}
+
+
+
+
+
+/* INTERACTIVE MAP ***********************************/
+
+.map-wrapper{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#img_interaction_map{
+  min-width:1000px;
+  min-height:663px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  opacity: 0.9;
+  
+}
+
+#map_about{
+  margin-top: 700px;
+  margin-left: 0px;
+  color:red;
+}
+
+
+
+/* FOOTER ********************************************/
+footer {
+	display:flex;
+	min-height:50px;
+	margin-top:10px; 
+  margin-right:0px; 
+  margin-bottom:5px;
+  margin-left:0px;
+  border-radius: 5px;
+	background-color: #0e0e0e;
+}
+
+footer #c_rights{
+	padding-left: 10px;
+	text-transform: uppercase;
+  color: #C0C0C0;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration:none;
+}  
+
+#footer_totop{ margin-top: 15px;}
+
+#footer_totop a{
+  padding-left: 200px;
+  font-variant: small-caps;
+  text-decoration: none;
+  color: #C0C0C0;
+}
+
+
+/* MEDIA QUERIES ********************************************/
+/* CSS that's applied when the viewing area's width is 765px or less */
+@media only screen 
+and (max-width : 765px) {
+  .main-center, table, img, #google_map, p, #attractions_pg_vid1, 
+    .twitter-timeline, #footer_totop, .form_enquiries{
+    display: none;
+  }
+
+}
+

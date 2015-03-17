@@ -1,0 +1,40 @@
+#deluxroom_desc, #sup_desc, #pres_desc, #junior_desc, 
+	#grand_desc, #pres-suite_desc{
+	display: none;
+	padding-left:30px;
+	padding-right:30px;
+	font-size: 16px;
+}
+
+nav{
+  position: relative;
+}
+
+/*#overlay{
+	position: fixed;
+	top:0;
+	left:0;
+	height: 100%;
+	width:100%;
+	background: black url(loader.gif) no-repeat scroll center center;
+
+}*/
+
+#lightbox{
+	position:fixed;
+}
+
+.desc{
+	display:none;
+	padding-left: 40px;
+	padding-right: 40px;	
+	font-family: "Merriweather",serif;
+	font-size: 15px;
+}
+
+.fieldset_room{
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom-style: dotted;
+}
